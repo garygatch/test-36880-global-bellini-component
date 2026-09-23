@@ -1,0 +1,69 @@
+{
+  "type": "component",
+  "name": "globalContext",
+  "children": [],
+  "variables": [
+    {
+      "name": "pets",
+      "type": "open-api",
+      "id": "open-api"
+    }
+  ],
+  "bindings": [],
+  "modules": [],
+  "styles": [],
+  "directories": {
+    "assets": [
+      {
+        "id": "yB9DNKVp3g2GOIr4Nifix",
+        "name": "dir"
+      }
+    ],
+    "components": [
+      {
+        "id": "poeLaZV3aR3MHeUegSN9Y",
+        "name": "users"
+      }
+    ],
+    "scripts": [
+      {
+        "id": "m-T985DRjwkHh4dCRK-TD",
+        "name": "dir"
+      }
+    ],
+    "stylesheets": [
+      {
+        "id": "9DBStfYGcA2hQRA1Pddqh",
+        "name": "dir"
+      }
+    ]
+  },
+  "externalStylesheets": [
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
+    }
+  ],
+  "externalScripts": [
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/4.0.0-alpha.24/lib.min.js"
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+    }
+  ],
+  "localStylesheets": [
+    {
+      "path": "dir/index.css",
+      "parentDirectoryId": "9DBStfYGcA2hQRA1Pddqh"
+    }
+  ],
+  "localScripts": [
+    {
+      "path": "index.js"
+    },
+    {
+      "path": "dir/foobar.js",
+      "parentDirectoryId": "m-T985DRjwkHh4dCRK-TD"
+    }
+  ]
+}

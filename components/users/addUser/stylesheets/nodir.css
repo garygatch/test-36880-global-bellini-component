@@ -1,0 +1,21 @@
+.global-1__components__add-user {
+  .box1 {
+    width: 100px; /* Sets the width of the box */
+    height: 100px; /* Sets the height of the box */
+    background-color: lightblue; /* Sets the background color to light blue */
+    border: 1px solid blue; /* Adds a 1px solid blue border */
+    transition: all 0.3s ease-in-out; /* Smoothly animates all properties over 0.3 seconds */
+    animation: fadeIn 1s ease-in-out forwards; /* Applies the fadeIn animation for 1 second */
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

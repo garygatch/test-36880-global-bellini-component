@@ -1,0 +1,49 @@
+{
+  "type": "custom-component",
+  "name": "addUser",
+  "children": [],
+  "variables": [],
+  "bindings": [],
+  "modules": [],
+  "styles": [],
+  "directories": {
+    "assets": [
+      {
+        "id": "UpZT8-o6JxaucRGzhpZUt",
+        "name": "dir"
+      }
+    ],
+    "components": [],
+    "scripts": [
+      {
+        "id": "leOczN63g-ju4BBDJyaRl",
+        "name": "dir"
+      }
+    ],
+    "stylesheets": [
+      {
+        "id": "t_xsGvEpgOeBeEO9-rVM8",
+        "name": "dir1"
+      }
+    ]
+  },
+  "parentDirectoryId": "poeLaZV3aR3MHeUegSN9Y",
+  "localStylesheets": [
+    {
+      "path": "dir1/comp.css",
+      "parentDirectoryId": "t_xsGvEpgOeBeEO9-rVM8"
+    },
+    {
+      "path": "nodir.css"
+    }
+  ],
+  "localScripts": [
+    {
+      "path": "index.js"
+    },
+    {
+      "path": "dir/adduser.js",
+      "parentDirectoryId": "leOczN63g-ju4BBDJyaRl"
+    }
+  ]
+}

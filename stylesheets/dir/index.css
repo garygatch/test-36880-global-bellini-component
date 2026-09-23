@@ -1,0 +1,414 @@
+:root {
+  --global1-primary-color: #007bff;
+  --global1-secondary-color: #6c757d;
+  --global1-success-color: #28a745; /* New: Success color */
+  --global1-danger-color: #dc3545;  /* New: Danger color */
+  --global1-warning-color: #ffc107; /* New: Warning color */
+  --global1-info-color: #17a2b8;    /* New: Info color */
+  --global1-light-color: #f8f9fa;   /* New: Light color */
+  --global1-dark-color: #343a40;    /* New: Dark color */
+  --global1-text-color: #333;
+  --global1-heading-color: #212529;
+  --global1-link-color: var(--global1-primary-color);
+  --global1-link-hover-color: #0056b3;
+  --global1-background-color: #fff;
+  --global1-border-color: #ccc;
+  --global1-border-radius: 4px;
+  --global1-spacing-unit: 8px;
+  --global1-font-family: Arial, sans-serif;
+  --global1-font-size-base: 16px;
+  --global1-font-size-large: 20px;
+  --global1-font-size-medium: 18px;
+  --global1-font-size-small: 14px;
+  --global1-line-height-base: 1.5;
+  --global1-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --global1-transition-duration: 0.2s;
+  --global1-padding-xs: calc(var(--global1-spacing-unit) / 4); /* New: Extra small padding */
+  --global1-padding-sm: calc(var(--global1-spacing-unit) / 2);
+  --global1-padding-md: var(--global1-spacing-unit);
+  --global1-padding-lg: calc(var(--global1-spacing-unit) * 1.5);
+  --global1-padding-xl: calc(var(--global1-spacing-unit) * 2); /* New: Extra large padding */
+  --global1-margin-xs: calc(var(--global1-spacing-unit) / 4);  /* New: Extra small margin */
+  --global1-margin-sm: calc(var(--global1-spacing-unit) / 2);
+  --global1-margin-md: var(--global1-spacing-unit);
+  --global1-margin-lg: calc(var(--global1-spacing-unit) * 1.5);
+  --global1-margin-xl: calc(var(--global1-spacing-unit) * 2);  /* New: Extra large margin */
+}
+
+/* Base styles for the test-36880-global component wrapper */
+test-36880-global {
+  display: block; /* Ensures the component takes its own line */
+  font-family: var(--global1-font-family);
+  font-size: var(--global1-font-size-base);
+  line-height: var(--global1-line-height-base);
+  color: var(--global1-text-color);
+  background-color: var(--global1-background-color);
+  border: 1px solid var(--global1-border-color);
+  border-radius: var(--global1-border-radius);
+  padding: var(--global1-padding-md);
+  margin-bottom: var(--global1-margin-md);
+  box-shadow: var(--global1-box-shadow);
+  transition: all var(--global1-transition-duration) ease-in-out;
+}
+
+/* Headings (h1-h6) within the test-36880-global component */
+test-36880-global h1,
+test-36880-global h2,
+test-36880-global h3,
+test-36880-global h4,
+test-36880-global h5,
+test-36880-global h6 {
+  font-family: var(--global1-font-family);
+  color: var(--global1-heading-color);
+  margin-top: var(--global1-margin-lg);
+  margin-bottom: var(--global1-margin-sm);
+  line-height: 1.2;
+}
+
+test-36880-global h1 {
+  font-size: calc(var(--global1-font-size-base) * 2.25); /* Approx. 36px */
+}
+
+test-36880-global h2 {
+  font-size: calc(var(--global1-font-size-base) * 1.75); /* Approx. 28px */
+}
+
+test-36880-global h3 {
+  font-size: calc(var(--global1-font-size-base) * 1.5); /* Approx. 24px */
+}
+
+test-36880-global h4 {
+  font-size: calc(var(--global1-font-size-base) * 1.25); /* Approx. 20px */
+}
+
+test-36880-global h5 {
+  font-size: var(--global1-font-size-base); /* 16px */
+}
+
+test-36880-global h6 {
+  font-size: var(--global1-font-size-small); /* 14px */
+  color: var(--global1-secondary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Paragraphs within the test-36880-global component */
+test-36880-global p {
+  margin-top: 0;
+  margin-bottom: var(--global1-margin-md);
+}
+
+/* Links within the test-36880-global component */
+test-36880-global a {
+  color: var(--global1-link-color);
+  text-decoration: none;
+  transition: color var(--global1-transition-duration) ease-in-out;
+}
+
+test-36880-global a:hover {
+  color: var(--global1-link-hover-color);
+  text-decoration: underline;
+}
+
+/* Buttons (generic) and .btn class within test-36880-global */
+test-36880-global button,
+test-36880-global .btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: var(--global1-primary-color);
+  border: 1px solid var(--global1-primary-color);
+  padding: var(--global1-padding-sm) var(--global1-padding-md);
+  font-size: var(--global1-font-size-base);
+  border-radius: var(--global1-border-radius);
+  transition: color var(--global1-transition-duration) ease-in-out,
+              background-color var(--global1-transition-duration) ease-in-out,
+              border-color var(--global1-transition-duration) ease-in-out,
+              box-shadow var(--global1-transition-duration) ease-in-out;
+}
+
+test-36880-global button:hover,
+test-36880-global .btn:hover {
+  color: #fff;
+  background-color: var(--global1-link-hover-color);
+  border-color: var(--global1-link-hover-color);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Using primary color with alpha */
+}
+
+test-36880-global button:focus,
+test-36880-global .btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Using primary color with alpha */
+}
+
+test-36880-global button:active,
+test-36880-global .btn:active {
+  background-color: #004d9a; /* Darker primary color */
+  border-color: #004d9a;
+}
+
+/* Secondary Button style */
+test-36880-global .btn-secondary {
+  color: #fff;
+  background-color: var(--global1-secondary-color);
+  border-color: var(--global1-secondary-color);
+}
+
+test-36880-global .btn-secondary:hover {
+  color: #fff;
+  background-color: #5a6268; /* Darker secondary color */
+  border-color: #545b62;
+}
+
+/* Forms (basic inputs) within test-36880-global */
+test-36880-global input[type="text"],
+test-36880-global input[type="email"],
+test-36880-global input[type="password"],
+test-36880-global textarea,
+test-36880-global select { /* Added select element */
+  display: block;
+  width: 100%;
+  padding: var(--global1-padding-sm);
+  font-size: var(--global1-font-size-base);
+  line-height: var(--global1-line-height-base);
+  color: var(--global1-text-color);
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid var(--global1-border-color);
+  border-radius: var(--global1-border-radius);
+  transition: border-color var(--global1-transition-duration) ease-in-out, box-shadow var(--global1-transition-duration) ease-in-out;
+  margin-bottom: var(--global1-margin-md);
+}
+
+test-36880-global input[type="text"]:focus,
+test-36880-global input[type="email"]:focus,
+test-36880-global input[type="password"]:focus,
+test-36880-global textarea:focus,
+test-36880-global select:focus { /* Added select element focus */
+  color: var(--global1-text-color);
+  background-color: #fff;
+  border-color: #80bdff; /* Light blue for focus */
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Using primary color with alpha */
+}
+
+test-36880-global textarea {
+  min-height: calc(var(--global1-font-size-base) * 3); /* Approx. 3 lines */
+  resize: vertical;
+}
+
+/* Lists (unordered and ordered) within test-36880-global */
+test-36880-global ul,
+test-36880-global ol {
+  margin-top: 0;
+  margin-bottom: var(--global1-margin-md);
+  padding-left: calc(var(--global1-spacing-unit) * 2.5); /* Indent lists */
+}
+
+test-36880-global ul li,
+test-36880-global ol li {
+  margin-bottom: var(--global1-margin-sm);
+}
+
+/* Blockquote styles for quoting content */
+test-36880-global blockquote {
+  padding: var(--global1-padding-md) calc(var(--global1-padding-md) * 1.5);
+  margin: 0 0 var(--global1-margin-md);
+  font-size: var(--global1-font-size-medium);
+  line-height: var(--global1-line-height-base);
+  color: var(--global1-secondary-color);
+  border-left: 5px solid var(--global1-border-color);
+}
+
+/* Images: Basic responsive styling */
+test-36880-global img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Removes extra space below image */
+  margin-bottom: var(--global1-margin-md);
+}
+
+/* Tables: Basic styling for tabular data */
+test-36880-global table {
+  width: 100%;
+  margin-bottom: var(--global1-margin-md);
+  border-collapse: collapse; /* Collapses borders into a single border */
+  border: 1px solid var(--global1-border-color);
+}
+
+test-36880-global th,
+test-36880-global td {
+  padding: var(--global1-padding-sm) var(--global1-padding-md);
+  text-align: left;
+  border-bottom: 1px solid var(--global1-border-color);
+}
+
+test-36880-global th {
+  background-color: var(--global1-light-color);
+  font-weight: bold;
+  color: var(--global1-heading-color);
+}
+
+test-36880-global tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.03); /* Light zebra striping */
+}
+
+/* Horizontal Rule (hr): Styling for thematic breaks */
+test-36880-global hr {
+  margin-top: var(--global1-margin-lg);
+  margin-bottom: var(--global1-margin-lg);
+  border: 0;
+  border-top: 1px solid var(--global1-border-color);
+}
+
+/* Card Component: A flexible content container */
+test-36880-global .card {
+  background-color: var(--global1-background-color);
+  border: 1px solid var(--global1-border-color);
+  border-radius: var(--global1-border-radius);
+  box-shadow: var(--global1-box-shadow);
+  margin-bottom: var(--global1-margin-lg);
+}
+
+test-36880-global .card-header {
+  padding: var(--global1-padding-md);
+  margin-bottom: 0;
+  background-color: var(--global1-light-color);
+  border-bottom: 1px solid var(--global1-border-color);
+  border-top-left-radius: var(--global1-border-radius);
+  border-top-right-radius: var(--global1-border-radius);
+  font-weight: bold;
+  color: var(--global1-heading-color);
+}
+
+test-36880-global .card-body {
+  padding: var(--global1-padding-md);
+}
+
+test-36880-global .card-footer {
+  padding: var(--global1-padding-md);
+  background-color: var(--global1-light-color);
+  border-top: 1px solid var(--global1-border-color);
+  border-bottom-left-radius: var(--global1-border-radius);
+  border-bottom-right-radius: var(--global1-border-radius);
+  color: var(--global1-secondary-color);
+  font-size: var(--global1-font-size-small);
+}
+
+/* Alert Messages: Contextual feedback messages */
+test-36880-global .alert {
+  padding: var(--global1-padding-md);
+  margin-bottom: var(--global1-margin-md);
+  border: 1px solid transparent;
+  border-radius: var(--global1-border-radius);
+  font-size: var(--global1-font-size-base);
+  line-height: var(--global1-line-height-base);
+}
+
+test-36880-global .alert-primary {
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
+}
+
+test-36880-global .alert-secondary {
+  color: #383d41;
+  background-color: #e2e3e5;
+  border-color: #d6d8db;
+}
+
+test-36880-global .alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+test-36880-global .alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+test-36880-global .alert-warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+test-36880-global .alert-info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
+
+/* Small utility classes for common layouts and styling */
+test-36880-global .text-center {
+  text-align: center;
+}
+
+test-36880-global .text-right {
+  text-align: right;
+}
+
+test-36880-global .text-left {
+  text-align: left;
+}
+
+/* Text color utilities */
+test-36880-global .text-primary { color: var(--global1-primary-color) !important; }
+test-36880-global .text-secondary { color: var(--global1-secondary-color) !important; }
+test-36880-global .text-success { color: var(--global1-success-color) !important; }
+test-36880-global .text-danger { color: var(--global1-danger-color) !important; }
+test-36880-global .text-warning { color: var(--global1-warning-color) !important; }
+test-36880-global .text-info { color: var(--global1-info-color) !important; }
+test-36880-global .text-light { color: var(--global1-light-color) !important; }
+test-36880-global .text-dark { color: var(--global1-dark-color) !important; }
+test-36880-global .text-muted { color: var(--global1-secondary-color) !important; } /* A common alias for secondary */
+
+/* Background color utilities */
+test-36880-global .bg-primary { background-color: var(--global1-primary-color) !important; }
+test-36880-global .bg-secondary { background-color: var(--global1-secondary-color) !important; }
+test-36880-global .bg-success { background-color: var(--global1-success-color) !important; }
+test-36880-global .bg-danger { background-color: var(--global1-danger-color) !important; }
+test-36880-global .bg-warning { background-color: var(--global1-warning-color) !important; }
+test-36880-global .bg-info { background-color: var(--global1-info-color) !important; }
+test-36880-global .bg-light { background-color: var(--global1-light-color) !important; }
+test-36880-global .bg-dark { background-color: var(--global1-dark-color) !important; }
+test-36880-global .bg-white { background-color: #fff !important; }
+
+/* Display utilities */
+test-36880-global .d-block { display: block !important; }
+test-36880-global .d-inline { display: inline !important; }
+test-36880-global .d-inline-block { display: inline-block !important; }
+test-36880-global .d-flex { display: flex !important; }
+test-36880-global .d-none { display: none !important; }
+
+/* Spacing utilities (margin and padding in all directions) */
+/* Margin Top */
+test-36880-global .mt-xs { margin-top: var(--global1-margin-xs) !important; }
+test-36880-global .mt-sm { margin-top: var(--global1-margin-sm) !important; }
+test-36880-global .mt-md { margin-top: var(--global1-margin-md) !important; }
+test-36880-global .mt-lg { margin-top: var(--global1-margin-lg) !important; }
+test-36880-global .mt-xl { margin-top: var(--global1-margin-xl) !important; }
+test-36880-global .mt-0 { margin-top: 0 !important; }
+/* Margin Bottom */
+test-36880-global .mb-xs { margin-bottom: var(--global1-margin-xs) !important; }
+test-36880-global .mb-sm { margin-bottom: var(--global1-margin-sm) !important; }
+test-36880-global .mb-md { margin-bottom: var(--global1-margin-md) !important; }
+test-36880-global .mb-lg { margin-bottom: var(--global1-margin-lg) !important; }
+test-36880-global .mb-xl { margin-bottom: var(--global1-margin-xl) !important; }
+test-36880-global .mb-0 { margin-bottom: 0 !important; }
+/* Padding All */
+test-36880-global .p-xs { padding: var(--global1-padding-xs) !important; }
+test-36880-global .p-sm { padding: var(--global1-padding-sm) !important; }
+test-36880-global .p-md { padding: var(--global1-padding-md) !important; }
+test-36880-global .p-lg { padding: var(--global1-padding-lg) !important; }
+test-36880-global .p-xl { padding: var(--global1-padding-xl) !important; }
+test-36880-global .p-0 { padding: 0 !important; }
+/* Padding Top */
+test-36880-global .pt-md { padding-top: var(--global1-padding-md) !important; }
+/* Padding Bottom */
+test-36880-global .pb-md { padding-bottom: var(--global1-padding-md) !important; }

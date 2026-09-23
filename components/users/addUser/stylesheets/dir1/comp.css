@@ -1,0 +1,35 @@
+.add-user__form {
+  /* CSS for the form within the add users component */
+}
+
+.add-user__form-group {
+  margin-bottom: 15px; /* Spacing between form groups */
+}
+
+.add-user__label {
+  display: block; /* Ensures label takes its own line */
+  margin-bottom: 5px; /* Spacing between label and input */
+  font-weight: bold; /* Makes labels stand out */
+}
+
+.add-user__input {
+  width: 100%; /* Full width inputs */
+  padding: 8px; /* Inner padding for inputs */
+  border: 1px solid #ccc; /* Standard border */
+  border-radius: 4px; /* Slightly rounded corners */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+.add-user__button {
+  background-color: #007bff; /* Primary button color */
+  color: white; /* White text for buttons */
+  padding: 10px 15px; /* Padding for buttons */
+  border: none; /* No border for buttons */
+  border-radius: 4px; /* Rounded corners for buttons */
+  cursor: pointer; /* Indicates it's clickable */
+  font-size: 16px; /* Font size for buttons */
+}
+
+.add-user__button:hover {
+  background-color: #0056b3; /* Darker background on hover */
+}
